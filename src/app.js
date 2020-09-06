@@ -1,11 +1,6 @@
-//Destructuring props into {}
-const pet = ({ name, animal, breed }) => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, name),
-    React.createElement("h2", {}, animal),
-    React.createElement("h2", {}, breed),
-  ]);
-};
+import React from 'react';
+import { render } from 'react-dom';
+import  pet  from "./pet";
 
 const app = () => {
   return React.createElement(
@@ -26,4 +21,4 @@ const app = () => {
   );
 };
 
-ReactDOM.render(React.createElement(app), document.getElementById("root"));
+render(React.createElement(app), document.getElementById("root"));
