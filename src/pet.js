@@ -2,13 +2,13 @@ import React from "react";
 //Destructuring props into {}
 export default function Pet({ name, animal, breed, media, location, id }) {
   let hero = "http://placecorgi.com/300/300";
-  if(media.length){
+  if (media.length) {
     hero = media[0].small;
   }
-    return (
-    <a href =  {`/details/${id}`} className = "pet">
-      <div className = "image-container">
-          <img src = {hero} alt = {name} />
+  return (
+    <a href={`/details/${id}`} className="pet">
+      <div className="image-container">
+        <img src={hero} alt={name} />
       </div>
       <div className="info">
         <h1>{name}</h1>
