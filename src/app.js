@@ -5,15 +5,14 @@ import ThemeContext from "./ThemeContext";
 //import Pet from "./pet";
 import SearchParams from "./SearchParams";
 import Details from "./Details";
+import NavBar from "./NavBar";
 const App = () => {
   const themeHook = useState("peru");
 
   return (
     <ThemeContext.Provider value={themeHook}>
       <div>
-        <header>
-          <Link to="/">Adopt Me!</Link>
-        </header>
+        <NavBar />
         <Router>
           <SearchParams path="/" />
           <Details path="/details/:id" />
