@@ -7,6 +7,7 @@ export default function Pet({ name, animal, breed, media, location, id }) {
     hero = media[0].small;
   }
   return (
+    //dynamic routing using reach router
     <Link to={`/details/${id}`} className="pet">
       <div className="image-container">
         <img src={hero} alt={name} />
